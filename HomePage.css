@@ -1,0 +1,145 @@
+html, body * {
+  box-sizing: border-box;
+  margin: 0.42%;
+  padding-left: 4.678900012345%;
+  padding-right: 4.11111%;
+  padding-top: .4%;
+  padding-bottom: .000424242223%;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 6.1vh;
+}
+body{
+  background-color: lightblue;
+}
+h1{
+font-size: 80px;
+line-height: 18vh;
+font-style: oblique;
+font-family: "Hoefler Text", "Baskerville Old Face", "Times New Roman", serif;
+}
+h3 {
+line-height: 8vh;
+font-size: 33px;
+font-style: oblique;
+font-family: "Hoefler Text", "Baskerville Old Face", "Times New Roman", serif;
+}
+h2 {
+  text-align: left;
+  position: fixed;
+  font-size: 28px;
+  line-height: 4.2vh;
+}
+h4 {
+  font-size:32px;
+}
+h6 {
+font-size: 42px;
+line-height: 4.34242vh;
+font-style: oblique;
+font-family: "Hoefler Text", "Baskerville Old Face", "Times New Roman", serif;
+}
+#byline {
+  font-size: 1.8em;
+}
+#rightside {
+  float: right;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 56%;
+}
+#caption {
+  padding-left: 8.8%;
+  font-weight: bolder;
+}
+#tothleft {
+  float: left;
+  margin-left: 43%
+}
+#listKlamar {
+  margin-bottom: 5%;
+  margin-left: 42%;
+  font-style: oblique;
+}
+a, ul{
+  list-style-type: none;
+  border-radius:3vh;
+
+  text-decoration: none;
+  text-align: right;
+  }
+.navi {
+  width: 33%;
+  height: 20%;
+  position: fixed;
+  top: 33vh;
+  background-color: #fffacd;
+  border-radius: 3vh;
+  text-align: justify;
+}
+#drizzy {
+  font-size: 1.8em;
+  float: left;
+  margin-bottom: 5vh;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#roxislandzzz {
+  padding-top: 4.20vh;
+  margin: 0px;
+}
+#BEYONCE {
+  float: right;
+  padding-left: 88vh;
+}
+#beyond {
+  float: left;
+  text-align: right;
+  font-size: 13.44px;
+  font-weight: 1000;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+}
+#thisone {
+  background-color:#fffacd;
+}
+#view {
+  float: right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+ul.navi {
+  border-radius:3vh;
+  background-color: lightblue;
+  list-style: none;
+  font-weight: bolder;
+  background-color: #fffacd;
+  text-decoration: none;
+}
+ul.navi li a {
+  text-decoration: none;
+  background-color: lightblue;
+  border-radius: 8vh;
+  width: 100%;
+  height: 42%;
+  text-transform:uppercase;
+  border-bottom-left-radius: 4vh;
+  text-decoration-style: double;
+}
+@media only screen and (max-width:500px)
+{ /*for mobile devices*/
+.flex-wrapper
+    {flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+}
+}

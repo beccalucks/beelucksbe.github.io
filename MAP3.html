@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'>
+</script>
+<link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+<header>
+    <h1 id="pubname"><img class="b" src="images/b.png" height=28% width=20% alt=" ">the Bee Lucks Be.</h1>
+  <h4>The Kingdom's Protected Wilds: Mapping the UK's 15 National Parks
+  </h4>
+  <h3>By Becca Thomas Loux
+  </h3>
+</header>
+<img src="images/parksmap.png"  alt="intromap">
+  <div id="caption">
+  The above map is a static UK National Parks map, courtesy of the UK National Parks Service. It denotes the official names and boundaries of the United Kingdom's 15 National Parks. Ireland is not included in this map, nor is it part of the same Park System. Click and zoom in the map below to browse a geographical terrain-focused mapbox. MapBox is a framework which allows programmers to embed customizable maps into their websites; this mapbox window gives you access to terrain, geography and protected areas the world over. Countries catetgorize parks systems in various manners: here in the United Kingdom the government designates and protects natural regions either as National Parks or Areas of Outstanding Natural Beauty (AONBs) as well as more local regional and city parks and protected green spaces. Both National Parks and AONB's are denoted upon a close zoom with a small tree marker. This parks-focused map displays those classifications in the UK and shows major natural landmarks like Snowdon Peak, in north Wales which is the highest summit in that country at 1085 meters. It also gives human civilizational context to the open spaces of the UK by showing major roads, cities and infraestructure. Zoom in close enough to a particular lake or forested area and you will see more specific terrain information like lake and river names and elevation lines. Some human recreational and industrial centers are included at a close zoom as well, such as the Northumbrian Water Treatment Compound in the Portrack Marsh Nature Reserve in the North York Moors area or the Warcop Firing Range in the North Pennines AONB.  The UK's National Park Service has designated three protected park spaces in Wales: Snowdonia, Brecon Beacons and the Pembrokeshire Coast. Scotland has two official parks south of the highlands, Loch Lomond & the Tressochs and Cairgorms. England's ten National Parks are: Exmoore, Dartmoore, Yorkshire Dales, North York Moors, Lake District, Northumberland, South Downs, Peak District, New Forrest and Broads. (Of course, the map allows you to explore the same data for anywhere else in the world as well.)
+
+                </div>
+            <div id='map' style='width: 742px; height: 742px;'>
+            </div>
+<script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiYmVjY2FsdWNrcyIsImEiOiJjamE4YWwyOGUwNHYxMndvNmhoNXB2NWw4In0.Ps1fR3CkVX1u3FBXxLZXIQ';
+          var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/outdoors-v10'
+          });
+</script>
+      <style>
+              .mapboxgl-popup {
+                  max-width: 100%;
+                  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+              }
+      </style>
+  <style>
+
+  /* the following pop-up is a modified version of a simple JS/CSS/HTML pop up I learned from W3 schools.
+  /* Note from source code from w3 schools: Popup container - can be anything you want */
+  .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  /* Note from source code from w3 schools: The actual popup */
+  .popup .popuptext {
+      visibility: hidden;
+      width: 100%;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+  }
+
+  /* NOte from source code, w3 schools: Popup arrow */
+  .popup .popuptext::after {
+      content: "";
+  }
+  /*Note from w3 S: Toggle this class - hide and show the popup */
+  .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 3s;
+      animation: fadeIn 3s;
+  }
+  /* Note from w3 schools: Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 2;}
+  }
+  </style>
+  <div class="popup" onclick="myFunction()">Map Created by Becca Loux using MapBox software.
+    <span class="popuptext" id="myPopup">Zoom in on the United Kingdom to learn more about the terrain and parks system in the United Kingdom.
+    </span>
+
+<script>
+  // The pop up is defined by the <div> element of the DOM.
+
+  function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+  }
+  </script>
+  <a href="BeLucksBee.html">Back to the Hive
+                         </a>
+
+
+                                                 </footer>
+   </body>
+       </html>
